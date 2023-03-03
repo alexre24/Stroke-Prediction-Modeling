@@ -19,7 +19,7 @@ https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 ### Explanatory Data Analysis
 #### - A countplot was used to visualize the number of people in the dataset had a stroke compared to the number who did not have a stroke.
 #### - Histograms, boxplots, or countplots were used on all categorical data.
-![](Screen%Shot%2023-03-02%at%9.20.43%PM.png)
+![](Screen%20Shot%202023-03-02%20at%209.20.43%20PM.png)
 > The countplot shows that the majority of people in the dataset did not have a stroke. This indicates how imbalanced the data is. 
 
 
