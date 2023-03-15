@@ -36,19 +36,19 @@ https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
 ## Model
 
-The model used was a KNN Model. 
+The model used was a Decision Tree Model. 
 
 ### Important metrics
 #### Train
-- Precision: 0.50
-- Recall: 1.00
-- Accuracy: 0.96
+- Precision: 0.81
+- Recall: 0.96
+- Accuracy: 0.85
 #### Test
-- Precision: 0.00
-- Recall: 1.00
-- Accuracy: 0.96
+- Precision: 0.65
+- Recall: 0.94
+- Accuracy: 0.80
 
->This model did not perform well on the test data set. The accuracy score is decieving. Even though in the test set, the model was correct 100% of the time when predicting true negatives, the test set did not predict any true positives correctly. This is an issue, because it is dangerous to have a model that incorrectly predicts that a person will not have a stroke, when they are clearly at high risk of having one. 
+>This model did not perform very well on the test data set. Although the accuracy score was 80%, it was not able to accurately predict many of the true positives. This is an issue, because it is dangerous to have a model that incorrectly predicts that a person will not have a stroke, when they are clearly at high risk of having one. 
 
 
 ## Recommendations:
@@ -57,4 +57,4 @@ Based on the exploratory data, I reccommend that screenings and tests for stroke
 
 ## Limitations & Next Steps
 
-The largest limitation with the model and the dataset was that there was significantly more data on those who did not have strokes than those who do. This imbalance caused the model to be inaccurate when predicting true positives. In the future, I will use techniques to balance the dataset so that the model can make better predictions. 
+The largest limitation with the model and the dataset was that there was significantly more data on those who did not have strokes than those who do. This imbalance caused the model to be inaccurate when predicting true positives. Because of this, I took 500 random samples of the true negative data instead of the entire dataset. In the future, I will use more effective balancing techniques.  
